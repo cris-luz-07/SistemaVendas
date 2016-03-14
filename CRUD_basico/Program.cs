@@ -17,7 +17,14 @@ namespace CRUD_basico
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            frmLogin frmLogin = new frmLogin();
+
+            frmLogin.ShowDialog();
+
+            if (frmLogin.logado)
+            {
+                Application.Run(new frmCaixa());
+            }
         }
     }
 }

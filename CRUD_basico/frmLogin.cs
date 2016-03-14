@@ -16,6 +16,8 @@ namespace Sistema_de_Vendas
         SqlConnection sqlConn = null;
         private string strConn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Lenovo_ThinkPad\Documents\Visual Studio 2015\Projects\CRUD_basico\CRUD_basico\sisDB\dbPrincipal.mdf;Integrated Security = True; Connect Timeout = 30";
         private string _Sql = string.Empty;
+        public Boolean logado = false;
+
 
         public frmLogin()
         {
@@ -45,7 +47,14 @@ namespace Sistema_de_Vendas
 
                 if(v > 0)
                 {
-                    MessageBox.Show("Logado com Sucesso");
+                    //valida como logado e destroi objeto do Login.
+                    logado = true;
+                    this.Dispose();
+                }
+                else
+                {
+                    MessageBox.Show("Tente novamente!!");
+                    logado = false;
                 }
             }
             catch (Exception erro)
@@ -53,6 +62,16 @@ namespace Sistema_de_Vendas
                 MessageBox.Show(erro+" no Banco");
                 throw;
             }
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            logar();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

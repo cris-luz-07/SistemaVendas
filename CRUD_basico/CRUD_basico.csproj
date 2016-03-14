@@ -65,11 +65,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BDCADASTRODataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CadastroLogin.cs">
+    <Compile Include="frmCaixa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroLogin.Designer.cs">
-      <DependentUpon>CadastroLogin.cs</DependentUpon>
+    <Compile Include="frmCaixa.Designer.cs">
+      <DependentUpon>frmCaixa.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -80,11 +80,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CadastroLogin.resx">
-      <DependentUpon>CadastroLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>CadastroLogin.cs</DependentUpon>
+    <EmbeddedResource Include="frmCaixa.resx">
+      <DependentUpon>frmCaixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -131,6 +128,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>BDCADASTRO.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\cadeado_login.png" />
     <None Include="Resources\1457676748_Add.ico" />
   </ItemGroup>
   <ItemGroup>
