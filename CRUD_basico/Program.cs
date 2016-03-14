@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema_de_Vendas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace CRUD_basico
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadastroCliente());
+            Application.Run(new frmLogin());
         }
     }
 }

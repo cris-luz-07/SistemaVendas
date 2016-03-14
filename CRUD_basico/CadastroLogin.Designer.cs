@@ -1,6 +1,6 @@
 ﻿namespace CRUD_basico
 {
-    partial class frmCadastroCliente
+    partial class frmCadastroLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroCliente));
             this.lblId = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
@@ -48,6 +47,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbNovo = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -209,27 +209,33 @@
             // 
             // tsbNovo
             // 
-            this.tsbNovo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbNovo.Image = global::CRUD_basico.Properties.Resources._1457676748_Add;
-            this.tsbNovo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNovo.Name = "tsbNovo";
             this.tsbNovo.Size = new System.Drawing.Size(23, 22);
-            this.tsbNovo.Text = "Novo";
             // 
             // toolStripButton2
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
-            // frmCadastroCliente
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(312, 149);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(177, 37);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // frmCadastroLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(541, 204);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.lblTelefone);
@@ -247,9 +253,10 @@
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblId);
-            this.Name = "frmCadastroCliente";
+            this.Name = "frmCadastroLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de cliente";
+            this.Load += new System.EventHandler(this.frmCadastroCliente_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -278,6 +285,7 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbNovo;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

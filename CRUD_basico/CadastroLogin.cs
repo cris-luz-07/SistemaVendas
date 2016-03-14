@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace CRUD_basico
 {
-    public partial class frmCadastroCliente : Form
+    public partial class frmCadastroLogin : Form
     {
-        public frmCadastroCliente()
+        public frmCadastroLogin()
         {
             InitializeComponent();
+          
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,6 +36,16 @@ namespace CRUD_basico
         private void lblUF_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmCadastroCliente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
