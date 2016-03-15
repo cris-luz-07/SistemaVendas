@@ -12,9 +12,17 @@ namespace Sistema_de_Vendas
 {
     public partial class frmCaixa : Form
     {
+        public bool CriarUsuario = false; 
+
         public frmCaixa()
         {
             InitializeComponent();
+        }
+
+        private void btnCriarUsuario_Click(object sender, EventArgs e)
+        {
+            CriarUsuario = true;
+            this.Dispose();
         }
     }
 }
