@@ -24,18 +24,7 @@ namespace CRUD_basico
             if (frmLogin.logado)
             {
                 Application.Run(new frmCaixa());
-
-
-                frmCaixa frmCaixa = new frmCaixa();
-                frmCaixa.ShowDialog();
-
-                if (frmCaixa.CriarUsuario)
-                {
-                    //frmCadastroUsuario frmLogin = new frmCadastroUsuario();
-                    //frmCadastroUsuario.ShowDialog();
-                    Application.Run(new frmCadastroUsuario());
-
-                }
+                                
             }
 
         
