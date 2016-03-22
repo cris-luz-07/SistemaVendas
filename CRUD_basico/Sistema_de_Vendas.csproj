@@ -73,7 +73,7 @@
     <Compile Include="MODEL\Pedido.cs" />
     <Compile Include="MODEL\Permissao.cs" />
     <Compile Include="MODEL\Produto.cs" />
-    <Compile Include="MODEL\Usuario.cs" />
+    <Compile Include="MODEL\Usuario2.cs" />
     <Compile Include="VIEW\frmCaixa.cs">
       <SubType>Form</SubType>
     </Compile>
