@@ -1,4 +1,5 @@
 ﻿using Sistema_de_Vendas;
+using Sistema_de_Vendas.MODEL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,14 +21,22 @@ namespace CRUD_basico
             frmLogin frmLogin = new frmLogin();
 
             frmLogin.ShowDialog();
-
+           
             if (frmLogin.logado)
             {
                 Application.Run(new frmCaixa());
                                 
             }
 
-        
+            Usuario usuario = new Usuario();
+
+            MessageBox.Show(usuario.Email + " " + usuario.Senha);
+
+            usuario.Email = "usuario3";
+            usuario.Senha = "usuario3";
+
+            MessageBox.Show(usuario.Email+" "+usuario.Senha );
+
         }
     }
 }

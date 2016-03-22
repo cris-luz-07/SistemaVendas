@@ -67,6 +67,7 @@ namespace Sistema_de_Vendas
         private void btnLogin_Click(object sender, EventArgs e)
         {
             logar();
+
         }
 
         private void button1_Click(object sender, EventArgs e)

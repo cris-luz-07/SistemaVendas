@@ -60,30 +60,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BDCADASTRODataSet.Designer.cs">
+    <Compile Include="BANCO\BDCADASTRODataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BDCADASTRODataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="frmCaixa.cs">
+    <Compile Include="MODEL\itensPedido.cs" />
+    <Compile Include="MODEL\Pedido.cs" />
+    <Compile Include="MODEL\Permissao.cs" />
+    <Compile Include="MODEL\Produto.cs" />
+    <Compile Include="MODEL\Usuario.cs" />
+    <Compile Include="VIEW\frmCaixa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCaixa.Designer.cs">
+    <Compile Include="VIEW\frmCaixa.Designer.cs">
       <DependentUpon>frmCaixa.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="VIEW\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="VIEW\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCaixa.resx">
+    <EmbeddedResource Include="VIEW\frmCaixa.resx">
       <DependentUpon>frmCaixa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="VIEW\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -96,15 +101,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="BDCADASTRODataSet.xsc">
+    <None Include="BANCO\BDCADASTRODataSet.xsc">
       <DependentUpon>BDCADASTRODataSet.xsd</DependentUpon>
     </None>
-    <None Include="BDCADASTRODataSet.xsd">
+    <None Include="BANCO\BDCADASTRODataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>BDCADASTRODataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="BDCADASTRODataSet.xss">
+    <None Include="BANCO\BDCADASTRODataSet.xss">
       <DependentUpon>BDCADASTRODataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
@@ -121,10 +126,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BDCADASTRO.mdf">
+    <Content Include="BANCO\BDCADASTRO.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="BDCADASTRO_log.ldf">
+    <Content Include="BANCO\BDCADASTRO_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>BDCADASTRO.mdf</DependentUpon>
     </Content>
