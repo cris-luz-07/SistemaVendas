@@ -13,7 +13,7 @@ namespace Sistema_de_Vendas.MODEL
         private String email = string.Empty;
         private String senha = string.Empty;
         private Permissao permissao;
-        private int i = 0;
+        
 
         public Usuario(String email, String senha)
         {
