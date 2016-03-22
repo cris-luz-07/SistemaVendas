@@ -13,8 +13,7 @@ namespace Sistema_de_Vendas.DAO
         void remover(E e);
 
         void alterar(E e);
-         
-        List<E> listar();
 
+        List<E> listar { get; }
     }
 }

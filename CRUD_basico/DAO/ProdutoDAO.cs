@@ -19,9 +19,12 @@ namespace Sistema_de_Vendas.MODEL
             throw new NotImplementedException();
         }
 
-        public List<Produto> listar()
+        public List<Produto> listar
         {
-            throw new NotImplementedException();
+            get
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public void remover(Produto e)

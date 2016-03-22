@@ -19,9 +19,12 @@ namespace Sistema_de_Vendas.MODEL
             throw new NotImplementedException();
         }
 
-        public List<Usuario> listar()
+        public List<Usuario> listar
         {
-            throw new NotImplementedException();
+            get
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public void remover(Usuario e)
