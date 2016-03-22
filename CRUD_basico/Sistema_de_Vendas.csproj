@@ -65,6 +65,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BDCADASTRODataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DAO\genericoDAO.cs" />
+    <Compile Include="DAO\PedidoDAO.cs" />
+    <Compile Include="DAO\ProdutoDAO.cs" />
+    <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="MODEL\itensPedido.cs" />
     <Compile Include="MODEL\Pedido.cs" />
     <Compile Include="MODEL\Permissao.cs" />
