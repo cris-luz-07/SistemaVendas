@@ -28,7 +28,7 @@ namespace CRUD_basico
                                 
             }
 
-            Usuario usuario = new Usuario();
+            Usuario usuario = new Usuario("usuario","usuario");
 
             MessageBox.Show(usuario.Email + " " + usuario.Senha);
 

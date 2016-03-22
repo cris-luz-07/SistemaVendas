@@ -15,8 +15,9 @@ namespace Sistema_de_Vendas.MODEL
         SqlConnection sqlConn = null;
         private string strConn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Lenovo_ThinkPad\Documents\Visual Studio 2015\Projects\CRUD_basico\CRUD_basico\sisDB\dbPrincipal.mdf;Integrated Security = True; Connect Timeout = 30";
         private string _Sql = string.Empty;
-    
-        
+
+       
+
         public void inserir(Pedido e)
         {
             try
@@ -77,26 +78,34 @@ namespace Sistema_de_Vendas.MODEL
         public List<Pedido> listar
         {
             get
-            //{
-            //    try
-            //    {
-            //        string sql = "select * from Agenda";
-            //        SqlDataAdapter sda = new SqlDataAdapter(sql, cnn);
-            //        DataSet dtset = new DataSet();
-            //        sda.Fill(dtset, "Agenda");
-            //        DataTable dt = dtset.Tables["Agenda"];
-            //        gdvNomes.SetDataBinding(dtset, "Agenda");
-
-            //        foreach (DataRow dtRow in dt.Rows)
-            //        {
-            //            LstDetalhes.Items.Add(dtRow["nome"].ToString());
-            //        }
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.ToString());
-            //    }
-            //}
+            {
+                throw new NotImplementedException();
+            }
         }
+
+        //public List<Pedido> listar
+        //{
+        //    get
+        //    //{
+        //    //    try
+        //    //    {
+        //    //        string sql = "select * from Agenda";
+        //    //        SqlDataAdapter sda = new SqlDataAdapter(sql, cnn);
+        //    //        DataSet dtset = new DataSet();
+        //    //        sda.Fill(dtset, "Agenda");
+        //    //        DataTable dt = dtset.Tables["Agenda"];
+        //    //        gdvNomes.SetDataBinding(dtset, "Agenda");
+
+        //    //        foreach (DataRow dtRow in dt.Rows)
+        //    //        {
+        //    //            LstDetalhes.Items.Add(dtRow["nome"].ToString());
+        //    //        }
+        //    //    }
+        //    //    catch (Exception ex)
+        //    //    {
+        //    //        MessageBox.Show(ex.ToString());
+        //    //    }
+        //    //}
+        //}
     }
 }
